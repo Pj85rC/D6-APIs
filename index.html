@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>D6 - Conversor ded Monedas</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <h1 class="display-6 d-flex justify-content-center bg-success p-2 text-white bg-opacity-75">Conversor de monedas Nacional</h1>
+    <div class="container d-flex flex-column  justify-content-center m-4" id="container">
+      <h2 class="text-center">Pesos CLP</h2>
+      <input id="iAmount" type="number" placeholder="Ingrese el monto en CLP" />
+      <h5 class="text-center">Moneda a converit</h5>
+      <select id="sMoney" size="1">
+        <option>Selecciona moneda</option>
+      </select>
+      <button id="btn" type="button" class="btn btn-outline-success m-3">Buscar</button>
+      <h3 class="text-center">...</h3>
+    </div>
+    <div>
+      <canvas id="myChart" width="600"></canvas>
+    </div>
+
+   <script src="assets/js/script.js"></script>
+  </body>
+</html>
